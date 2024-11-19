@@ -34,7 +34,6 @@ def main():
             for row in range(1, GRID_ROWS):
                 pygame.draw.line(screen, "red", (0, row * CELL_HEIGHT), (640, row * CELL_HEIGHT))
 
-            # Draw the mole
             screen.blit(mole_image, mole_image.get_rect(topleft=(mole_x, mole_y)))
             pygame.display.flip()
             clock.tick(60)
